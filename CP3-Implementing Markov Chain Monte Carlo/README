@@ -19,7 +19,6 @@ Submit a ZIP file of your source code containing:
 - All starter `.py` files with your implementations.  
 - Ensure correctness via Gradescope's auto-grading feedback.
 
-Upload here: [Source Code Submission](https://www.gradescope.com/courses/712231/assignments/4243197/)
 
 ---
 
@@ -34,8 +33,6 @@ Submit a PDF file with:
    - 2a: Posterior predictive visualization for order-2 polynomial.  
    - 2b: Per-example test scores in tabular format.  
    - 2c: Implementation of `calc_score` function (formatted in LaTeX).
-
-Upload here: [Report Submission](https://www.gradescope.com/courses/712231/assignments/4243193/)
 
 ---
 
