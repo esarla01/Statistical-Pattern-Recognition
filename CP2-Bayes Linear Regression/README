@@ -1,56 +1,56 @@
 ## Statistical Pattern Recognition (CP2: Bayesian Linear Regression)
 
-**Course**: Tufts CS COMP 136 SPR | Spring 2023  
-**Assignment**: CP2: Bayesian Linear Regression  
+Course: Tufts CS COMP 136 SPR | Spring 2023  
+Assignment: CP2: Bayesian Linear Regression  
 
-### **Overview**
+### Overview
 In this project, you implement and evaluate the Bayesian Linear Regression model for regression tasks. The focus is on understanding the probabilistic framework, developing predictive distributions, and exploring hyperparameter selection techniques. The assignment uses synthetic datasets to study performance under varying data sizes and model complexities.
 
 ---
 
-### **Key Goals**
-1. **Predictive Modeling**:
+### Key Goals
+1. Predictive Modeling:
    - Estimate the probability of new outputs given new inputs using Maximum A-Posteriori (MAP) and Posterior Predictive (PPE) estimators.
    - Compare the flexibility and uncertainty quantification of MAP and PPE approaches.
 
-2. **Hyperparameter Selection**:
-   - Use **5-fold cross-validation** to optimize hyperparameters \(\alpha\) and \(\beta\).
-   - Employ **evidence maximization** to streamline hyperparameter selection using the training set.
+2. Hyperparameter Selection:
+   - Use 5-fold cross-validation to optimize hyperparameters \(\alpha\) and \(\beta\).
+   - Employ evidence maximization to streamline hyperparameter selection using the training set.
 
 ---
 
-### **Key Concepts**
-- **Probabilistic Framework**:
+### Key Concepts
+- Probabilistic Framework:
   - Model weights \(w\) with a multivariate Normal prior.
   - Define the likelihood of observed outputs \(t\) with Gaussian assumptions.
   - Transform input features using polynomial expansions of varying order.
 
-- **MAP Estimation**:
+- MAP Estimation:
   - Derive optimal weights by solving penalized ML estimation problems.
   - Use these weights to form predictive distributions for unseen data.
 
-- **Posterior Predictive Estimation (PPE)**:
+- Posterior Predictive Estimation (PPE):
   - Average predictions over the entire posterior distribution of weights to quantify uncertainty.
 
-- **Model Selection**:
+- Model Selection:
   - Grid search for \(\alpha, \beta\) with cross-validation (Problem 2).
   - Evidence-based hyperparameter selection using marginal likelihood (Problem 3).
 
 ---
 
-### **Project Deliverables**
-1. **Source Code**:
+### Project Deliverables
+1. Source Code:
    - Implement `fit` and `predict` methods for MAP and PPE estimators.
    - Develop scripts for hyperparameter tuning and visualization.
 
-2. **PDF Report**:
+2. PDF Report:
    - Short answers and analysis of prediction scores and uncertainty.
    - Visualization of prediction performance and model fit.
    - Evaluation of hyperparameter selection strategies.
 
 ---
 
-### **Evaluation Highlights**
+### Evaluation Highlights
 - Visualize predictive performance for models of varying polynomial orders (\(r = 1, 3, 9\)).
 - Analyze prediction uncertainty and robustness to data sparsity.
 - Compare selection strategies:
@@ -59,13 +59,13 @@ In this project, you implement and evaluate the Bayesian Linear Regression model
 
 ---
 
-### **Data**
-- **Synthetic Dataset**: "ToyWave" (512 train/test examples).
+### Data
+- Synthetic Dataset: "ToyWave" (512 train/test examples).
 - Visualizations include training on subsets (\(N=20\)) and full datasets (\(N=512\)).
 
-### **Reflection**
+### Reflection
 - Cross-validation ensures robust selection by testing unseen data.
 - Evidence-based selection provides computational efficiency by leveraging probabilistic principles. 
 
-**Source Code**: [Tufts CS136 GitHub Repository](https://github.com/tufts-ml-courses/cs136-23s-assignments/tree/main/unit2_CP/)  
-**License**: MIT
+Source Code: [Tufts CS136 GitHub Repository](https://github.com/tufts-ml-courses/cs136-23s-assignments/tree/main/unit2_CP/)  
+License: MIT
