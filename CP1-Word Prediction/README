@@ -1,0 +1,46 @@
+## Statistical Pattern Recognition (CP1: Probabilistic Prediction of Words)
+
+**Course**: Tufts CS COMP 136 SPR | Spring 2023  
+**Assignment**: CP1: Probabilistic Prediction of Words  
+
+## Overview  
+This project explores probabilistic modeling and hyperparameter selection using text data from U.S. presidential State of the Union addresses (1945-2016). The goal is to analyze, predict, and evaluate next-word probabilities using different statistical estimators and selection techniques.  
+
+## Key Goals  
+1. Implement and evaluate probabilistic models for next-word prediction.  
+2. Explore methods to estimate hyperparameters for improved model performance.  
+
+## Key Concepts  
+- **Categorical Distribution**: Models vocabulary as discrete random variables.  
+- **Maximum Likelihood Estimation (ML)**: Estimates word probabilities based on observed counts.  
+- **MAP & Posterior Predictive Estimation**: Incorporates prior beliefs for robust probability estimates.  
+- **Hyperparameter Optimization**: Uses marginal likelihood to select the best Dirichlet prior (α).  
+
+## Project Deliverables  
+1. **Code Implementation**:  
+   - ML, MAP, and Posterior Predictive estimators (`fit` and `predict_proba` methods).  
+   - Hyperparameter selection (`calc_per_word_log_evidence` method).  
+2. **Experiments**:  
+   - Compare test-set log likelihood across estimators with varying training set sizes.  
+   - Assess α selection using log evidence and test-set likelihood.  
+3. **Report (PDF)**:  
+   - Graphical and written analysis of estimator performance and hyperparameter optimization.  
+
+## Dataset  
+Text from State of the Union speeches (1945-2016). Training data includes 1945-2015; the 2016 speech serves as the test set.  
+
+## Environment  
+- Python environment: **spr_2024s_env**  
+- Starter code: [Tufts CS136 GitHub Repository](https://github.com/tufts-ml-courses/cs136-24s-assignments)  
+
+## Instructions  
+1. Train models using training data and test on 2016 speech.  
+2. Submit:  
+   - Code ZIP file with all `.py` files and edits.  
+   - Report (PDF) with results, figures, and short answers.  
+
+## Questions?  
+Post on the course discussion forum under the `cp1` topic.  
+
+---  
+**License**: MIT License | Source: [GitHub](https://github.com/tufts-ml-courses/cs136-24s-assignments)  
