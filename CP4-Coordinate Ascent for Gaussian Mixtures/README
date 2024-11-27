@@ -1,4 +1,7 @@
-# Statistical Pattern Recognition Project
+## Statistical Pattern Recognition (CP4: Gaussian Mixture Models)
+
+Course: Tufts CS COMP 136 SPR | Spring 2024  
+Assignment: CP4: Gaussian Mixture Models
 
 ## Overview
 This project focuses on implementing and evaluating two algorithms for learning the parameters of a Gaussian Mixture Model (GMM): Expectation Maximization (EM) and LBFGS Gradient Descent. The task involves applying these models to the FashionMNIST dataset, specifically focusing on images of shirts and analyzing how sensitive the methods are to initialization and component selection.
