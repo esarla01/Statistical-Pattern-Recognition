@@ -1,0 +1,88 @@
+# CP3: Implementing Markov Chain Monte Carlo
+
+## Project Overview
+
+In this project, you will implement the Metropolis MCMC algorithm with Random Walk proposals to:
+
+1. Sample from a target distribution.
+2. Tune MCMC parameters like proposal standard deviation.
+3. Use MCMC samples for predictive analysis on real-world data.
+
+You will analyze synthetic data in Problem 1 and bird density measurements from radar in Problem 2.
+
+---
+
+## Deliverables
+
+### 1. Source Code  
+Submit a ZIP file of your source code containing:  
+- All starter `.py` files with your implementations.  
+- Ensure correctness via Gradescope's auto-grading feedback.
+
+Upload here: [Source Code Submission](https://www.gradescope.com/courses/712231/assignments/4243197/)
+
+---
+
+### 2. Report  
+Submit a PDF file with:  
+1. Your Full Name  
+2. Collaboration Statement  
+3. Problem 1:
+   - 1a: Figures for hyperparameter scatterplots.  
+   - 1b: Answer to acceptance rate question.  
+4. Problem 2:
+   - 2a: Posterior predictive visualization for order-2 polynomial.  
+   - 2b: Per-example test scores in tabular format.  
+   - 2c: Implementation of `calc_score` function (formatted in LaTeX).
+
+Upload here: [Report Submission](https://www.gradescope.com/courses/712231/assignments/4243193/)
+
+---
+
+## Problem Details
+
+### Problem 1: Random Walk Algorithm Implementation
+Objective: Draw samples from a multivariate normal target distribution.
+
+#### Tasks:
+1. Implement Random Walk Sampler  
+   - `calc_target_log_pdf`: Computes the log PDF of the target distribution.  
+   - `draw_samples`: Implements Metropolis sampling.
+
+2. Data Analysis  
+   - Analyze sampling across hyperparameters (`rw_stddev` values: 0.01, 0.1, 1.0, 10.0).  
+   - Visualize scatterplots for samples using provided plotting templates.  
+   - Assess convergence and acceptance rates.
+
+3. Report  
+   - Include scatterplots from different hyperparameters and initializations.  
+   - Answer: Is a high acceptance rate (e.g., 0.8 with `rw_stddev=100.0`) sufficient for convergence?
+
+---
+
+### Problem 2: Predicting Bird Density over Time
+Objective: Predict bird density using Bayesian regression.
+
+#### Tasks:
+1. Implement Probabilistic Model  
+   - `calc_joint_log_pdf`: Computes the log joint probability of the model.  
+   - `calc_score`: Evaluates predictive accuracy on test data.
+
+2. Data Analysis  
+   - Compare order-0 and order-2 polynomial models.  
+   - Verify convergence across multiple random seeds.  
+   - Visualize posterior predictive results for the order-2 model.
+
+3. Report  
+   - Include posterior predictive plot for the order-2 model.  
+   - Report per-example test scores for both polynomial orders.  
+   - Provide LaTeX-formatted implementation of `calc_score`.
+
+---
+
+## Resources
+
+- Starter Code & Data: [GitHub Repository](https://github.com/tufts-ml-courses/cs136-24s-assignments/tree/main/unit3_CP/)  
+- Helpful References:  
+  - Lecture notes from Day 12  
+  - PRML by Bishop (Section 11.2)
