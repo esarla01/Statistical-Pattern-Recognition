@@ -1,19 +1,44 @@
-# HW4: K-Means and Gaussian Mixture Models
+# Statistical Pattern Recognition Project
 
 ## Overview
-This homework covers K-Means clustering and Gaussian Mixture Models (GMMs), focusing on the iterative process of K-Means and the relationship between GMMs and K-Means.
+This project focuses on implementing and evaluating two algorithms for learning the parameters of a Gaussian Mixture Model (GMM): Expectation Maximization (EM) and LBFGS Gradient Descent. The task involves applying these models to the FashionMNIST dataset, specifically focusing on images of shirts and analyzing how sensitive the methods are to initialization and component selection.
 
 ## Key Goals
-- Implement the K-Means algorithm for clustering.
-- Understand the relationship between GMM and K-Means.
-- Derive the covariance for a mixture distribution.
+- Implement and evaluate the EM algorithm for GMMs.
+- Optionally, explore LBFGS Gradient Descent for model training.
+- Analyze model performance with respect to initialization and component selection.
+- Visualize learned GMM parameters and evaluate model scores.
 
 ## Key Concepts
-- K-Means: An algorithm for partitioning data into clusters by minimizing a cost function.
-- Gaussian Mixture Model (GMM): A probabilistic model representing a mixture of Gaussian distributions for clustering.
-- Covariance of Mixtures: Describes the spread of data in a mixture distribution.
+- Gaussian Mixture Model (GMM): A probabilistic model assuming data points are generated from a mixture of several Gaussian distributions.
+- Expectation Maximization (EM): An iterative method for finding maximum likelihood estimates of parameters in probabilistic models.
+- LBFGS: A gradient-based optimization method for solving large-scale optimization problems.
 
-## Deliverables
-1. Problem 1: K-Means walkthrough (steps for assignments and cluster updates).
-2. Problem 2: Relationship between GMM and K-Means.
-3. Problem 3: Derive the covariance for a mixture distribution.
+## Project Deliverables
+1. Code:
+   - Implement EM steps: E-step, M-step for weights, means, and variances.
+   - Train models with different numbers of components (K=1, 4, 8, 16).
+   - Perform validation and test evaluations.
+2. Report:
+   - Figure 1a: EM validation likelihood vs. iterations for various K values.
+   - Figure 1b: Visualization of learned parameters for K=8.
+   - Table 1c: Model scores (log-likelihood per pixel) on validation and test sets.
+
+## Setup
+- Starter Code: Available in the course GitHub repository.
+- Dataset: FashionMNIST subset, containing 20x20 grayscale images of shirts, t-shirts, and pullovers.
+
+## Implementation Steps
+1. EM Algorithm:
+   - Implement and optimize E-step and M-step updates.
+   - Use the provided script to run EM for different K values.
+2. Evaluation:
+   - Analyze and visualize model performance using training and test datasets.
+
+## Optional: LBFGS Gradient Descent
+- Transformation: Convert constrained parameters (weights and variances) to unconstrained forms.
+- Optimization: Apply LBFGS to optimize the GMM parameters.
+
+## Resources
+- GitHub Repo: [Course Repository](https://github.com/tufts-ml-courses/cs136-24s-assignments)
+- Dataset: FashionMNIST subset for shirt classification.
