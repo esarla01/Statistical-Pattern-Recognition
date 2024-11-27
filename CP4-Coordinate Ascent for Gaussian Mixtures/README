@@ -1,0 +1,19 @@
+# HW4: K-Means and Gaussian Mixture Models
+
+## Overview
+This homework covers K-Means clustering and Gaussian Mixture Models (GMMs), focusing on the iterative process of K-Means and the relationship between GMMs and K-Means.
+
+## Key Goals
+- Implement the K-Means algorithm for clustering.
+- Understand the relationship between GMM and K-Means.
+- Derive the covariance for a mixture distribution.
+
+## Key Concepts
+- K-Means: An algorithm for partitioning data into clusters by minimizing a cost function.
+- Gaussian Mixture Model (GMM): A probabilistic model representing a mixture of Gaussian distributions for clustering.
+- Covariance of Mixtures: Describes the spread of data in a mixture distribution.
+
+## Deliverables
+1. Problem 1: K-Means walkthrough (steps for assignments and cluster updates).
+2. Problem 2: Relationship between GMM and K-Means.
+3. Problem 3: Derive the covariance for a mixture distribution.
